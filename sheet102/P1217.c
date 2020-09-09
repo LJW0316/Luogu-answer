@@ -18,7 +18,7 @@ int main()
     int flag[MAXN], prime[MAXN];
     int a, b, n = 0;
     scanf("%d %d", &a, &b);
-    if (b > 10000000)
+    if (b > 10000000)                 //偶数位回文数（除11）一定能被11整除不可能为素数，故范围缩小到10000000以内
         b = 10000000;
     for (int i = 2; i <= b; i++)
         flag[i] = 1;
