@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define MAXN 10000005
-int check(int x)
+int check(int x)                        //判断回文数
 {
     int n = x, m = 0;
     while (n > 0)
