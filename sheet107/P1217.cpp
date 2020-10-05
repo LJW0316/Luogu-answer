@@ -9,16 +9,16 @@ int main()
     cin >> n >> m;
     for (int i = 0; i < m; i++)
     {
-        scanf("%d",&x);
-        a[x]++;
+        scanf("%d", &x);
+        a[x]++; //桶排
     }
     for (int i = 0; i <= 1000; i++)
     {
         if (a[i])
         {
-            for (int j = 0; j < a[i]; j++)
+            for (int j = 0; j < a[i]; j++) //按序输出
             {
-                printf("%d ",i);
+                printf("%d ", i);
             }
         }
     }
