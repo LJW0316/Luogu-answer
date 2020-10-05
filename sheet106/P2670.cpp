@@ -20,11 +20,11 @@ int main()
         for (int j = 1; j <= m; j++)
         {
             sum = 0;
-            if (str[i][j] == '*')
+            if (str[i][j] == '*')//*则输出
             {
                 cout << str[i][j];
             }
-            else
+            else//否则8个方向查找雷个数
             {
                 if (str[i - 1][j] == '*')
                     sum++;
